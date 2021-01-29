@@ -33,7 +33,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[30.3604026465631,-16.927990851316988],[57.83480278605891,58.025124447857316]]);
+        }).fitBounds([[31.797823049807523,4.291941023209308],[46.91473502979075,41.76849867279647]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -42,10 +42,10 @@
         function setBounds() {
             map.setMaxBounds(map.getBounds());
         }
-        map.createPane('pane_Earth_0');
-        map.getPane('pane_Earth_0').style.zIndex = 400;
-        var layer_Earth_0 = L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png', {
-            pane: 'pane_Earth_0',
+        map.createPane('pane__0');
+        map.getPane('pane__0').style.zIndex = 400;
+        var layer__0 = L.tileLayer('https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=21309404cc691741113e7d8594bf9cfe', {
+            pane: 'pane__0',
             opacity: 1.0,
             attribution: '',
             minZoom: 1,
@@ -53,12 +53,12 @@
             minNativeZoom: 0,
             maxNativeZoom: 18
         });
-        layer_Earth_0;
-        map.addLayer(layer_Earth_0);
-        map.createPane('pane__1');
-        map.getPane('pane__1').style.zIndex = 401;
-        var layer__1 = L.tileLayer('https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=21309404cc691741113e7d8594bf9cfe', {
-            pane: 'pane__1',
+        layer__0;
+        map.addLayer(layer__0);
+        map.createPane('pane_esri_1');
+        map.getPane('pane_esri_1').style.zIndex = 401;
+        var layer_esri_1 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            pane: 'pane_esri_1',
             opacity: 1.0,
             attribution: '',
             minZoom: 1,
@@ -66,8 +66,8 @@
             minNativeZoom: 0,
             maxNativeZoom: 18
         });
-        layer__1;
-        map.addLayer(layer__1);
+        layer_esri_1;
+        map.addLayer(layer_esri_1);
         map.createPane('pane__2');
         map.getPane('pane__2').style.zIndex = 402;
         var layer__2 = L.tileLayer('https://tile.openweathermap.org/map/wind_new/{z}/{x}/{y}.png?appid=21309404cc691741113e7d8594bf9cfe', {
@@ -186,7 +186,7 @@
         layer_USEPA_10;
         map.addLayer(layer_USEPA_10);
         var baseMaps = {};
-        L.control.layers(baseMaps,{"Δείκτης Ποιότητας του Αέρα (US-EPA)": layer_USEPA_10,"Διοξειδίου του Θείου": layer__9,"Αιωρούμενα Σωματίδια 2.5": layer_25_8,"Όζον": layer__7,"Διοξείδιο του Αζώτου": layer__6,"Μονοξείδιο του Άνθρακα": layer__5,"Υετός": layer__4,"Νεφώσεις": layer__3,"Άνεμοι": layer__2,"Θερμοκρασία": layer__1,"Earth": layer_Earth_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{"Δείκτης Ποιότητας του Αέρα (US-EPA)": layer_USEPA_10,"Διοξειδίου του Θείου": layer__9,"Αιωρούμενα Σωματίδια 2.5": layer_25_8,"Όζον": layer__7,"Διοξείδιο του Αζώτου": layer__6,"Μονοξείδιο του Άνθρακα": layer__5,"Υετός": layer__4,"Νεφώσεις": layer__3,"Άνεμοι": layer__2,"esri": layer_esri_1,"Θερμοκρασία": layer__0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>
