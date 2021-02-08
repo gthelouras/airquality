@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atmospheric Pollution Data</title>
+<body>
+<body style="background-color:powderblue;">
+<h1>Δεδομένα Ατμοσφαιρικής Ρύπανσης<h1>
+
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Πηγές Πληροφόρησης και Δεδομένων</h2>
+
+<table>
+  <tr>
+    <th>Οργανισμός</th>
+    <th>Χώρα</th>
+    <th>URL Access</th>
+  </tr>
+  <tr>
+    <td>ΥΠΕΝ ΕΔΠΑΡ</td>
+    <td>Ελλάδα</td>
+    <td><a href="https://ypen.gov.gr/perivallon/poiotita-tis-atmosfairas/dedomena-metriseon-atmosfairikis-rypansis/"" target="_blank">ΕΔΠΑΡ</a></td>
+  </tr>
+  <tr>
+    <td>Δήμος Θέρμης</td>
+    <td>Ελλάδα</td>
+   <td><a href="http://app.thermiair.gr/dashboard" target="_blank">Thermi Air</a></td>
+  </tr>
+  <tr>
+    <td>Δίκτυο Αιθέρας</td>
+    <td>Ελλάδα</td>
+    <td><a href="https://www.patrasair.gr/" target="_blank">Patras Air</a></td>
+  </tr>
+  <tr>
+    <td>Δήμος Θεσσαλονίκης</td>
+    <td>Ελλάδα</td>
+    <td><a href="https://platform.airthings-project.com/" target="_blank">Air Things</a></td>
+  </tr>
+  <tr>
+    <td>Europe Air Base</td>
+    <td>Ευρώπη</td>
+    <td><a href="https://www.eea.europa.eu/data-and-maps" target="_blank">AirBase</a></td>
+  </tr>
+  <tr>
+     <td>Europe Air Base</td>
+    <td>Ευρώπη</td>
+<td><a href="https://discomap.eea.europa.eu/map/fme/AirQualityExport.htm" target="_blank">AirQualityExport</a></td>
+  </tr>
+  <tr>
+     <td>Europe Air Base</td>
+    <td>Ευρώπη</td>
+<td><a href="https://discomap.eea.europa.eu/map/fme/AirQualityUTDExport.htm" target="_blank">AirQualityUTDExport</a></td>
+  </tr>
+  <tr>
+     <td>Europe Open Data Portal</td>
+    <td>Ευρώπη</td>
+<td><a href="https://data.europa.eu/euodp/en/data/dataset?q=air+pollution&ext_boolean=all" target="_blank">EU Open Data Portal</a></td>
+  </tr>
+  <tr>
+     <td>Europe Data Portal</td>
+    <td>Ευρώπη</td>
+<td><a href="https://www.europeandataportal.eu/el" target="_blank">EU Data Portal</a></td>
+  </tr>
+  <tr>
+     <td>Eionet</td>
+    <td>Ευρώπη</td>
+<td><a href="http://cdr.eionet.europa.eu/gr" target="_blank">Eionet</a></td>
+  </tr>
+  <tr>
+     <td>Copernicus</td>
+    <td>Ευρώπη</td>
+<td><a href="https://ads.atmosphere.copernicus.eu/#!/home" target="_blank">Copernicus ADS</a></td>
+  </tr>
+  <tr>
+     <td>Copernicus</td>
+    <td>Ευρώπη</td>
+<td><a href="https://cds.climate.copernicus.eu/#!/home" target="_blank">Copernicus CDS</a></td>
+  </tr>
+  <tr>
+     <td>Copernicus</td>
+    <td>Ευρώπη</td>
+<td><a href="https://atmosphere.copernicus.eu/charts/cams/?facets=undefined&time=2021020700,24,2021020800&projection=classical_global&layer_name=composition_co_totalcolumn" target="_blank">ECMWF</a></td>
+  </tr>
+ <tr>
+     <td>EMEP</td>
+    <td>Ευρώπη</td>
+<td><a href="https://www.emep.int/" target="_blank">EMEP</a></td>
+  </tr>
+ <tr>
+    <td>ECCAD</td>
+    <td>Ευρώπη</td>
+<td><a href="https://eccad.aeris-data.fr/" target="_blank">ECCAD</a></td>
+  </tr>
+<tr>
+    <td>Global Emissions InitiAtive</td>
+    <td>Ευρώπη</td>
+<td><a href="http://www.geiacenter.org/" target="_blank">GEIA</a></td>
+  </tr>
+<tr>
+    <td>International Global Atmospheric Chemistry Project</td>
+    <td>Ευρώπη</td>
+<td><a href="http://igacproject.org/" target="_blank">IGAC</a></td>
+  </tr>
+<tr>
+    <td>UK Air (DEFRA)</td>
+    <td>Ηνωμένο Βασίλειο</td>
+<td><a href="https://uk-air.defra.gov.uk/data/data-availability" target="_blank">UK AIR</a></td>
+  </tr>
+<tr>
+    <td>Emissions Database for Global Atmospheric Research</td>
+    <td>Ευρώπη</td>
+<td><a href="https://data.jrc.ec.europa.eu/collection/edgar" target="_blank">EDGAR</a></td>
+  </tr>
+<tr>
+    <td>Hemispheric Transport of Air Pollutants</td>
+    <td>Ευρώπη</td>
+<td><a href="http://htap.org/useful-links/" target="_blank">HTAP</a></td>
+  </tr>
+<tr>
+    <td>NASA EarthData</td>
+    <td>ΗΠΑ</td>
+<td><a href="https://earthdata.nasa.gov/earth-observation-data/near-real-time/hazards-and-disasters/air-quality" target="_blank">EarthData</a></td>
+  </tr>
+<tr>
+    <td>NASA WorldView</td>
+    <td>ΗΠΑ</td>
+<td><a href="https://worldview.earthdata.nasa.gov/" target="_blank">NASA World View</a></td>
+  </tr>
+<tr>
+    <td>Panoply</td>
+    <td>ΗΠΑ</td>
+<td><a href="https://www.giss.nasa.gov/tools/panoply/" target="_blank">Panoply</a></td>
+  </tr>
+<tr>
+    <td>NASA GIOVANNI</td>
+    <td>ΗΠΑ</td>
+<td><a href="https://giovanni.gsfc.nasa.gov/giovanni/" target="_blank">Giovanni</a></td>
+  </tr>
+<tr>
+    <td>LANCE</td>
+    <td>ΗΠΑ</td>
+<td><a href="https://earthdata.nasa.gov/earth-observation-data/near-real-time" target="_blank">LANCE</a></td>
+  </tr>
+<tr>
+    <td>Air now</td>
+    <td>ΗΠΑ</td>
+<td><a href="https://www.airnow.gov/" target="_blank">Air now</a></td>
+  </tr>
+<tr>
+    <td>EPA</td>
+    <td>ΗΠΑ</td>
+<td><a href="https://www.epa.gov/outdoor-air-quality-data" target="_blank">EPA Air Data</a></td>
+  </tr>
+<tr>
+    <td>EPA</td>
+    <td>ΗΠΑ</td>
+<td><a href="https://www.epa.gov.edgekey-staging.net/outdoor-air-quality-data/air-data-basic-information" target="_blank">Outdoor Air Quality Data
+</a></td>
+  </tr>
+<tr>
+    <td>EPA</td>
+    <td>ΗΠΑ</td>
+<td><a href="https://www.epa.gov/aqs" target="_blank">Air Quality System
+</a></td>
+  </tr>
+<tr>
+    <td>The IRI Climate Library</td>
+    <td>ΗΠΑ</td>
+<td><a href="http://iridl.ldeo.columbia.edu/" target="_blank">Columbia
+</a></td>
+  </tr>
+<tr>
+    <td>WHO</td>
+    <td>Παγκόσμια</td>
+<td><a href="https://www.who.int/health-topics/air-pollution#tab=tab_1" target="_blank">WHO
+</a></td>
+  </tr>
+<tr>
+    <td>WHO Europe</td>
+    <td>Παγκόσμια</td>
+<td><a href="https://www.euro.who.int/en/health-topics/environment-and-health/air-quality/data-and-statistics" target="_blank">WHO Europe
+</a></td>
+  </tr>
+<tr>
+    <td>World Air Quality Index</td>
+    <td>Παγκόσμια</td>
+<td><a href="https://aqicn.org/map/world/" target="_blank">WAQI
+</a></td>
+  </tr>
+<tr>
+    <td>PurpleAir</td>
+    <td>Παγκόσμια</td>
+<td><a href="https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#11.08/37.9631/23.7709" target="_blank">Purple Air
+</a></td>
+  </tr>
+<tr>
+    <td>hackAir</td>
+    <td>Παγκόσμια</td>
+<td><a href="https://platform.hackair.eu/" target="_blank">hackair
+</a></td>
+  </tr>
+<tr>
+    <td>IQAir</td>
+    <td>Παγκόσμια</td>
+<td><a href="https://www.iqair.com/earth?nav" target="_blank">IQAir
+</a></td>
+  </tr>
+<tr>
+    <td>Google Earth Engine</td>
+    <td>Παγκόσμια</td>
+<td><a href="https://developers.google.com/earth-engine/datasets" target="_blank">GEE
+</a></td>
+  </tr>
+<tr>
+    <td>ESA</td>
+    <td>Ευρώπη</td>
+<td><a href="https://sentinel.esa.int/web/sentinel/toolboxes/sentinel-atmospheric" target="_blank">ESA
+</a></td>
+  </tr>
+<tr>
+    <td>NOAA PSL</td>
+    <td>ΗΠΑ</td>
+<td><a href="https://psl.noaa.gov/cgi-bin/data/getpage.pl" target="_blank">NOAA
+</a></td>
+  </tr>
+<tr>
+    <td>ECAD</td>
+    <td>Ευρώπη</td>
+<td><a href="https://www.ecad.eu/" target="_blank">ECAD
+</a></td>
+  </tr>
+<tr>
+    <td>Dutch KNMI Climate Explorer</td>
+    <td>Ευρώπη</td>
+<td><a href="http://climexp.knmi.nl/start.cgi?id=someone@somewhere" target="_blank">WMO
+</a></td>
+  </tr>
+
+
+</table>
+
+</body>
+<p></p>
+
+<footer>
+  <p>Author: Georgios Thelouras<br>
+  <a href="mailto:gthelouras@gmail.com">gthelouras@gmail.com</a></p>
+<p>2021<p/>
+</footer>
+</html>

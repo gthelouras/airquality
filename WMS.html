@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QGIS with OGC</title>
+<body>
+<body style="background-color:powderblue;">
+<style>
+{
+  font-family: arial, sans-serif;
+}
+h1, h2, p, ul {
+  font-size: 20px;
+}
+.center {
+  margin: auto;
+  width: 80%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+</style>
+<div class="center">
+<h1>QGIS και χρήση δυνατοτήτων OGC</h1>
+
+<p>Το QGIS έχει δυνατότητες προβολής χαρτών σύμφωνα με τα πρότυπα OGC. To OGC (Open Geospatial Consortium) έχει προδιαγράψει τους βασικούς τρόπους διάθεσης γεωγραφικών και χαρτογραφικών δεδομένων με μια σειρά τυποποιημένων υπηρεσιών και προτύπων, όπως τα WMS, WFS, WCS, WMC, SLD, GML, κα</p>
+
+<p>Η υπηρεσία WMS (Web Map Service) αποτελεί μια μέθοδο διάχυσης χαρτών σε μορφή εικόνας στον Παγκόσμιο Ιστό.</p> 
+
+<p>Η υπηρεσία WMTS (Web Map Time Service) είναι παραλλαγή της υπηρεσίας με χρήση Tiled Map (Πλακίδια).</p>
+
+<p>Η υπηρεσία WFS (Web Feature Service) αποτελεί μια μέθοδο διάχυσης γεωγραφικών οντοτήτων στον Παγκόσμιο Ιστό. Σε αντίθεση με την υπηρεσία WMS που επιστρέφει χάρτες σε μορφή εικόνας, η υπηρεσία WFS επιστρέφει διανυσματικά δεδομένα σε μορφή GML.</p>
+
+<p>Η υπηρεσία WCS (Web Coverage Service) αποτελεί μια μέθοδο δημοσιοποίησης γεωχωρικών επιστρωμάτων (coverages) στον Παγκόσμιο Ιστό. Τα επιστρώματα σε αντίθεση με τους στατικούς χάρτες της υπηρεσίας WMS, φιλοξενούν τιμές ή ιδιότητες στις γεωγραφικές θέσεις που απεικονίζουν. Παραδείγματα επιστρώσεων είναι οι δορυφορικές εικόνες, οι αεροφωτογραφίες και τα ψηφιακά μοντέλα εδάφους.</p>
+
+<p>Το ΥΠΕΝ παρέχει υπηρεσίες OWS(OGC Web Services) όπως WMS, WFS, WCS. Η σύνδεση σε αυτές τις υπηρεσίες γίνεται με εισαγωγή της κατάλληλης URL διεύθυνσης για τη κάθε υπηρεσία πατώντας δεξί κλικ στο αντίστοιχο εικονίδιο και έπειτα στο κουμπί «Νέα Σύνδεση». Τα στοιχεία που εισήγαμε εμείς, ήταν τα εξής:</p>
+
+<img src="https://previews.dropbox.com/p/thumb/ABHqKhSO5nZpPHMQBAH5HaPBc1bin_lJylTFE4j_Hf2UEtG3w_Yrzo5xWSQdRqQFkF9yUcET7u1Ba2XiCe1TNdZLvZznvHK21YmYw3DLg46Fj460Ckyb00nMVGm0JiCLCZ20ZFL336O1xmEU9-aP0EWsSOdMDbyAOPp5nDb_-6tQ2_285XfwiMq5pyhO1CJw8GYoldyDvTIzSOA5-L3itB8dUHjCiDWUFL5-dkG9YMWPSSxuofr9_lHhOPmw8-jiuwaIKT1T_M_J6dDYbHp5dlE-7wRb26u7WezSAZS-qOGIK6fR2d46poJT5Bw3CBjwFjlg23Fg0CwTdeuODlOIET-_RJ22WTp3GdebvWFdGgJALg/p.jpeg?fv_content=true&size_mode=5">
+
+<ul>
+  <li>WMS <br> mapsportal </br>
+  http://mapsportal.ypen.gr/geoserver/wms</li>
+  <br></br>
+  <li>WFS <br> geoportal </br>
+  http://geoportal.ypen.gr/geoserver/wfs</li>
+</ul>  
+
+<p>Οι παρακάτω χάρτες δημιουργήθηκαν με αυτές τις υπηρεσίες</p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+<p>Δημιουργία χάρτη με υπόβαθρο τον εδαφολογικό χάρτη στην Επικράτεια και επίπεδο τη Μέση Ετήσια Τιμή στα Αιωρούμενα Σωματίδια 10</p>
+
+<img src="https://previews.dropbox.com/p/thumb/ABFNzL-cLyHp5VnAYi4aE1yzwQJbvkmkY2UzlCrhUxh-ZpyLMG9WVmWoth_9UVOZNoYGBKtOO9xADilQbWi6AV1eDV9K3nisxEV41D7EpHqhmygfSw-i7FXnuO2iJBHQu43g9223aUaSgc4n-rovTfoAY2e0YiyTw69OQQoGvmvCWxU_lCiJEn1F96Fb0i-vb5xVM5GnOF8tA4A3p1r5Ua8Kd1Ts_rablO9sWf6oz3SxnNFh-P6M_Pe9tlg_Pb0Aohmm3QCalqv6Fa3xOruakK98rKvoDXBdhwfdqbqMdhPDxusBVrfmjWlPLxtjlXQ6ypkiw-l5UL_EouVGkHj1QWTL02YgFU1HiisPxOu-2oTqtA/p.jpeg?size=2048x1536&size_mode=3" width="100%" height="900" style="vertical-align:middle">
+
+<p>Προσθήκη Επιπέδου Υπερβάσεις Ημερήσιας Οριακής Τιμής 50 μg/m3 από τα Αιωρούμενα Σωματίδια 10</p>
+
+<img src="https://previews.dropbox.com/p/thumb/ABEQGOT7YVWZgkgfUiB5nniOaXzk3z2HIO-euKP6nAajEDFJ6LyFTTzMnodPkm8WrSFsgZ1alExJ85KGtRDW5D2ga5O5y-zqzQmsg5DBERRNj2mAapWgFGM2R2aFolqeo3pbDwlAHQjg7o8ttjX6a2otHtlzd-IgbvOe8QUKEcLNfofXfYbMfs3IpDG0XCokbtOCzzzChNjMfQ_wYJMFmey3joV5hEr-lM6M3-Dz-98SjqrF-nnp2GkHM_2AKRxS27Jh8OXz1KEc6N3lO0RJ3xH4IuzytFZcqj41_s8Xtkv8yOZAD-hk3YAQVMtEi_pZq_jFN0ctxZadrC_D3dPk8WLyaeipsL6qIAJKW7szs3zjCQ/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+
+<p>Δημιουργία χάρτη με υπόβαθρο τη Σκίαση Αναγλύφου (Εδαφολογικό) και επίπεδο τη Μέση Ετήσια Τιμή στα Αιωρούμενα Σωματίδια 2,5</p>
+
+<img src="https://previews.dropbox.com/p/thumb/ABFxS13WUNkN0wyvtoD1JX3p80bR_WOEZEON7lE8GTukNZcLW7-W08TVimASlj2QVJIurCTYVDnhyRcsArtStnlZeHRVY6-0JGK0oPY1-Q8CUgG-3K5H9ot2pVhdoqi76eIh7iK96gkmi3cKnIPQcdJGAh5FwipbQswSXy8nAUd_9fJu7MXFm2mxCF6xvhdNRD1-uY8_Aonh1U8TkOTmAloTV7V3g6WPo8YsP83C_cy3OCtq6xEIZxo4Im3xD0EDUS0BJ5D2avhFdz_kFkDNDnoDzvFQlo3g-BFCikGqd8cmI5Lmf97qhjP-C5BK83DvfAMU7MRExTob3S7ttokE8B1JF3UskFN3MqJ5UMvokl2NMg/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<br>
+<img src="https://previews.dropbox.com/p/thumb/ABGoyUqSp7RxUH6B0cPhOee2KGRS3kDukarURiUe7grctPFWkFl8br0pZX4Wvrw5Fskb-IRA32Weph-zx3skaruGSdabhlxHzH9P3Gwc1Uo8TVS9mRdSLZYPf76eAdRVIRC9Ysn1cpan6VjTXoolZfJDHBh6bWq_gZfSEs9zB0OY8kGAVLOoAF517nW-UU63vSgDQdUj7sRaQTGoCy70BEVRtLTCWGpWD_3uIiECSu0l4mNrkiM0zX7Z_2bBSBF8ZfLqBYfBgpLVF4zbrRr5qrvG6y9seJSfOHIbZwOLU0ytgIOSKVELrzikrvcH0IStAzO0xpPDg6Rd3SMmyPSxtgB1kuwTl0WwznkXGlG3EMNOFA/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<p>Δημιουργία χάρτη με υπόβαθρο τις Περιφερειακές Ενότητες (ΕΛΣΤΑΤ) και επίπεδα τη Μέση Ετήσια Τιμή Βενζο[α]πυρένιο και τις εκπομπές της ουσίας κατα μήκος των Εθνικών οδών</p>
+<img src="https://previews.dropbox.com/p/thumb/ABG4mmSrHl3MDU0v7yVItpL2lc8vrPEmjGggl07UZN4nkpiHaqrlt2LqoipiaQwpDOwmfQIho6QWDVL1h5J-6f2JRN7EmemaxjfUScCKjX1RQJ7Whfe58KTq0S0vOitIrZNCepIBQSvkrknhkqsRukgIYWNKe-cLwjStNuNjalOYFkOB_Bvswy2-29L9iE3QbjwC9bX5aHb6QSrVN1gSBte3zoOqkSlKR0fGTF9vMaHrSBPWH7R4vzmO2GLPqlx0rgxNjflLZiD5pDVg-Fs9algGU_f0sF4Xyv60VDrGTiofPS-Kg8dCZJe3een8WvbKGvmtEbrs-i_BqzZ2bGWxPBQx-go96MbEZVPmOsNj-JQaMw/p.jpeg?size=2048x1536&size_mode=3" width="100%" height="900" style="vertical-align:middle">
+<br>
+<img src="https://previews.dropbox.com/p/thumb/ABHkMAUsedpdkjcHxjKgYNirQ1kFe0MYSIyTXs-gunTYcjNW6oiUhpOuuTQzgUfBvPL8KYGcrnFoOEjqWGh2i7Q6BA5Cju_MBVj7x78VP2miGvIx46P4ZPzMbalyOyD8Gs_Zu1oz_GK5roy1aro1Cl8zjaE2aQwPpTJSa_QsBPaMVFp15Q1Sqfi0-FOSXep_VexmQP0GodsW85jNMC0W6rI1z7NWrzets6MOZW7V07RamM5raW7NkmV4nBWm7_eS7tG3UNb2KBbAq4xeGpCiHpG3qmMZIEbtdPn_65NEy01wQa23cgkGaproub5GWmnSe2goM8DAtXTMNqCiC9Zr14I1KnpzKheP0KTLkSIoM8TWmw/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<p>Δημιουργία χάρτη με υπόβαθρο τις Περιφερειακές Ενότητες (ΕΛΣΤΑΤ) κι επίπεδο τη Μέση Ετήσια Τιμή στο Διοξείδιο του Αζώτου</p>
+<img src="https://previews.dropbox.com/p/thumb/ABEDT3rTn0341JS_jt_QKQ7mkpzX9Mmp02-G04DP3RuovyHRbDE3rKZWGh1GzxpO_UY-Cqp-qTlPFBMgPHUGoirBCQm-dAmmeBZ3wvz0fbYQcJyYoGW1CfEcKX89g6KIlq413aSFxedTPQ0TcAOiIK_9yMFhbSA-Cwa4jLvKTejyQ_rQhmM7dbeOTquV-qn0c_Hc9YWfUfu4N3EEckjO_L1HZQlLtTXvX0pzVwZPtlJ6sK16Fs1KkLL2-8idRicfw9dxpuhYOD6R3d2rttMftyB6Tybq21W1BG8HfIIRb5ZWM2x1VGTvJ4isUn6ibP7wHFA-DowDGNgACkaOpY5tFOGOYtKaHSb4qa4Kw9tQ7JTRfw/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<p>Προσθήκη Επιπέδου Εκπομπές Οξειδίων του Αζώτου (NOx) από Οδικές Μεταφορές</p>
+<img src="https://previews.dropbox.com/p/thumb/ABFP_Ixv4YUlDNS3E7K7zIOqAn983GAUbI8Ub-vedvMCyelpizMkTY20CJiqwEm1VZhDhL5XqbG9gz3KcS8SJcRnHPqPSomjoFzI6Ql3HDgh0j7QTim_nkZtRVLSVBzbJb0532gLpS2ZlCip2itczTDV1V9RcgIgbwj2nvM1ckDQpkS_bMhLrqolH2BK9uqFsxi6h_teDHiYnZPBhiqcM6khp6x8a5bHzFtItNvwAVBenG3Vq-8ImllPVQvett_FTDgnCftLIqF-yddE9TV3DHwCy2_zvyLmoyrxlg4rUh_DvzQt5Qxx0XSLlAinNpeVzTeGFBV8cSBRYi5kUwux5nuMDC3au3jM0j1Unqmta-IoIw/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<br>
+<img src="https://previews.dropbox.com/p/thumb/ABGk7158Bg6bkjom93QJRfiKQG8xsBbG5xrC7XPfsnWXGkFMgfrvmuigOatm65qqzO_c_UGvJH2tXrVrFVIPfik2FxCpLJ5dzO-KbcRB_s1xJVZLOgesgvgfm00zPvCWKeal9zJZdHf8fNioKVWg5A14ytnX_oKS5YFuWVApY909W0yIU9bBVme-OVA_6AqJ4AD2eSl68bHXWETf3UlIKCZexoRnjUiwckASOUCtrmMSmkoMprYvYlHC3uSgHIRBXB19QBTfkPe_HffzAM0l0zUXo2Uih_Yg0fAqxXdG5_VqS0r04D3iXiSgmN8UC4sDbSlzHAwANB6kcF3QipJFOuFt7gsQ6SnXek4cbQXvO0VL4w/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+
+<p>Με το mapsportal μας δίνεται η πρόσβαση σε 798 χάρτες εκ των οποίων αρκετοί σχετίζονται με την εκπομπή ατμοσφαιρικών ρύπων στον Ελλαδικό χώρο.</p>
+<p> Author: Georgios Thelouras</p>
+
+
+</div>
+
+</body>
+</html>
