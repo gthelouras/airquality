@@ -33,12 +33,61 @@ img {
 </style>
 </head>
 <body>
+<p>Από το Atmospheric Data Store (Copernicus) επιλέξαμε να κατεβάσουμε δεδομένα για τα Αιωρούμενα Σωματίδια και τη Σκόνη τη περιόδο από 06/02/2012 - 08/02/2021</p>
+<img src="https://previews.dropbox.com/p/thumb/ABFwqiahd-wvcHp6rUCHMeWPfyyb_LTVhxScIbwcHUAPQQpJdsGTyruwAlljx8v4pq-mAZYMro47zNg6fdbp5qrCGZBP5TyyXqT6oKh3csx8gJ3IYUAw7zil_rUUDlFf_uZ9VJEMDRY-NyTGD-KTeh9DCjIP2Uh_mzshtAnxAuiz0iImrxV8Y9ZS4BKsgN3um-MxP_RrxdAaaGAKmLT220iBZ6UuuigQdBO9H1iQ1nGEAYaGI1flE7u9FyTItGdN_Ui6HBAkMVpgglELaAzBvyaFG13zTccYOyQ8LfW9LUEmR85EgfKt3Ub_5Lg4mfyRqa3Yt-Vou_RQRQqHEEm5PonUHnWBoeuqDgwxQqav9lP_YZsCwx7fshdJhdPVFAtzHSo/p.jpeg?size=2048x1536&size_mode=3" width="100%" height="900" style="vertical-align:middle">
+<p>Οι αιτήσεις για τα δεδομένα ήταν από τη ΒΔ (dataset): CAMS European Air Quality Forecasts:</p>
+<img src="https://previews.dropbox.com/p/thumb/ABHkd7Fm1qJGbmp2Jylr3I9rA_ByVuLOn8aMcxiMILazJJ5kqlfK4MgmFpGF3IBhygtF2g9bhofIuVJ2X7Lwm1MjSKirNhRrfOeGbiZMcgSF6bJfWM2T_iZQrE-5hWpJSX_hoTLkZOI47INf-483ZS2jQvvGZQfdvKKfJdQI4FPkgLyvl1zGnhqMHS5eTWtB2E9IwSd1Wg0ATWF_Vk6t6K8Mu_OwvUppr8_hspxboKTiT34I6h-BU7XMO-MX4NnnTkM0wX_2rDEiHrU6J2OxZS4Q6roamIuzlS2uv47p5EOnYivEOlMSOw1h2eg1h4RzfcdVQ30-_Gh7MPVZ7Fx8OWd_g8jUu09vxVEI8of800amAw/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<p> Τα δεδομένα αφορούσαν τα Αιωρούμενα Σωματίδια 10 και 2,5 και έπειτα τη σκόνη (dust). Σχεδιάσαμε σε ένα χάρτη τη περιοχή του ενδιαφέροντος και επιλέξαμε να τα κατεβάσουμε ενώ υπήρχε και η δυνατότητα αποθήκευσης μέσω API</p>
+<p>Διαλέξαμε επίτηδες οι 2 αυτές περιοχές να μην είναι ίδιες μεταξύ τους. Το αρχείο PM10, PM2,5 ήταν 495.8 KB και το αρχείο για τη Σκόνη (Μεγαλύτερη περιοχή κάλυψης) ήταν 2.1 MB. </p>
+<p>Request ID: bb0ca34c-3f1c-459b-9b08-34d5579d1aa4<br>
+Variable:Particulate matter < 10 µm (PM10), Particulate matter < 2.5 µm (PM2.5)<br>
+Model:Ensemble median<br>
+Level:0<br>
+Date:2021-02-06 to 2021-02-08<br>
+Type:Analysis<br>
+Time:13:00<br>
+Leadtime hour:0<br>
+Restricted area:N: 47.27°, W: 12.57°, S: 32.24°, E: 32.95°<br>
+Format:NetCDF<br>
+</p>
 
 
+<p>Request ID: 1d342ecd-bae1-4650-bfad-f4ea08aa5e99<br>
+Model:Ensemble median<br>
+Level:0<br>
+Date:2021-02-06 to 2021-02-08<br>
+Type:Analysis<br>
+Time:13:00<br>
+Leadtime hour:0<br>
+Restricted area:N: 69.53°, W: -21.88°, S: 30.00°, E: 45.00°<br>
+Format:NetCDF<br>
+</p>
 
+<p>Το QGIS δύναται να ανοίξει αρχεία netCDF-4 - απλά, με εισαγωγή ως νεο επίπεδο raster (Εικόνας)</p>
+<img src="https://previews.dropbox.com/p/thumb/ABGbjFB95WQAMf2BL6MCD0lfmhwqH0apn8DfCmEVISTJaEP7rzoeNdTCe8RupV8vk97lIpVJEMBJcOJ1SWFHEYT-Gdj5Rs6dqDxUhSNCQPbQfqYEL2Ej4G30z5bcSWpsmLBZ_zPY7Tby4fMAP2tmYyFUNnvDnZWE5lT6xDBjM1uLytxzcxJSAQaERKf2MQ7DU_fFOGb3VGQd4RddIQ-Vt8g4W-HbLFLxklV7S-G7afh6eL-CZmNe6Pub4LWTVXgMKPH310UElkpQpOrsM6QA9MRWoH8mjvTqBa0gBKi1Q67Jr4KnaIM9ZuqAOMNaLNBJ9TPBUUQi6aPOzPrmSJUiq1dMNQSp6yxLKV0BV1eEHgHt3g/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<br>
+<p>Η εικόνα που κατεβάσαμε φαίνεται κάτω</p>
+<img src="https://previews.dropbox.com/p/thumb/ABGQeejJSWqTW2UeU5ASXZ8OIyBLrWERmayk0v3f3Hii5Rp5hBcKFTMkjLUO_PR6c_69y_zCT8cDPjxfTGuONoZvWfjo9vbUN_IwIVKQysSO4rNGnIofm_vmaGZE4_H2ZFuj8NSBrnU3kf3lUR7sHYmUg8Ue1jRMSXrf3F94Bm5UScNLSB0jfbO1uUqTBgQOYKLezKc7DsXyC1qxObhsKLoFtmlEgw8prYP2lFTgcu_YvTOBBiCKCmCsM_ywiR60971s0ckS5Hxz3PglBPiwdud7NaHISNersKSdwFi3FOrc_qpxKzWupT1smhpg4rq5s4DxqcVp5GngkpQnB6fvqP1zqngAw7VNhvSc5ple16QBFw/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<p>Το αρχείο εικόνας για τα Αιωρούμενα Σωματίδια 10, παρουσιάζεται κάτω. Η προβολή του με τον τρόπο αυτό δεν ήταν κατανοητή.</p>
+<img src="https://previews.dropbox.com/p/thumb/ABG5c5mD-WD172ViiLtlg0DX3Q8OF0rg4-3sTwycb5lnjFHN3Ly-RWhCqUAmmLcyknO61zfB5m7YE5O2yCFFM05iNmVutDcgu_Lhbj8M_fridUA01AX0Sjj9Xv01eFEWYKrWRigvcZcqEPKqzmUGthgTozbsp6aw1qaHfbPZBWRtANoCK-GaRp5tPsbblQ2ry7lq413-lVAGqbXQ8U1y1gX0F9GEDOyzpdzIsgOZwPIXC3KCtLflhUA1B_xXxLDBwgSRb6khaOmQ7YOuBbaKeQxHfn1ZilIceQg36eVHLcqLB8qvK0DH5xv4YUkk0uXOmxQKe_wVeXNazIs2HicgbwWOrOFNLB6_8g7EbQTxSraubA/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<br>
 
+<p>Το αρχείο με την εικόνα της Σκόνης, το περάσαμε πάνω από υπόβαθρο χάρτη ESRI, προκειμένου να βλέπουμε σε ποια περιοχή υπήρχε η κάθε χρωματική κλίμακα. Είχε προηγηθεί να ορίσουμε ως κοινό σύστημα συντεταγμένων το WGS84 ώστε να υπάρχει συμφωνία σε όλα τα επίπεδα</p>
+
+<img src="https://previews.dropbox.com/p/thumb/ABEUyHrD9ZfkD6NZIQeM28HcSeHK_YxklO96g0Y9RIl3AgsfVgzTVWZONTj-z7nezd4pFumheaKqKC7i0_3BfT8rjAjDUWoJChW_0kIzuGCB4HX922J8Q4LLHFpreGrdhAmuSNkKGoxdTBs4IgD4nRIV71Qp9vDEP9azGvbtbYOS3eE_pBnTh_P2yPzypNiw78m9w93UVhFdSs8JjlV2ZBJBbAjt1vu2xf2oVt5VyQWwWvQJfYwwfO-3er10Eh5Oc38Jmo3cJZ5jYqmYxbR-gHm8DhdLdbkHzUb48OQsBm4gmeBMTvcHENctPsYG5DWwejAGyE67sX7l0AIqskXxVmpz4-0hVVMhQlTWow1_nIGpcA/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<br>
+<p>Στη συνέχεια και μόνο για τα αρχεία με τα Αιωρούμενα Σωματίδια, επιλέξαμε την αλλαγή της προβολής σε Ψευδόχρωμα μοναδικής ζώνης με παρεμβολή ως Διακριτό και λειτουργία Συνεχές, 5 κλάσεις και κανονικό τρόπο ανάμιξης.</p>
+<p>Μειώσαμε και τη διαφάνεια στον χάρτη του υποβάθρου και το αποτέλεσμα φαίνεται στην εικόνα κάτω:</p>
+<img src="https://previews.dropbox.com/p/thumb/ABHGec8x9DhdEdMs9j3LUD_b4H7taupGm-Ki05pPRqdFBHr93AITeI_Kmu22K7fOiaBJbSml7_TMiv2i_toA5SsGg-uFTteXmIfoHkVHWCvWzN435GzuRE-2we0hYtIvxiWhlT6mMv7liUF8HydyGHMfW8zX5QZGpP2D-bdEjuDAYod869TinBtageA-sHvC9_5bUQwGV3Y3cIn370DW0Ki6R3Je-NHVT1moI6mTBLG7h7WqJbiDBptCKKsS14BPh08Wd4-Nd4HRdPLz_Sz9gLCCcLeYgxqN6Gj0fIcmbQeDR1u123xbjoPNA3lCjnUUQbrz6ZqTgQ-79SuH0nMTWZgxWlwq59uRaglxlmjX8GnNqw/p.jpeg?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<br>
+<p>Η ανάλυση των αρχείων μπορεί να γίνει με επιπλέον πρόσθετα του QGIS. Η παρακάτω εικόνα είναι τα ΑΣ10 στις 13 ώρες και τις 37 ώρες</p>
+
+<img src="https://previews.dropbox.com/p/orig/ABHV86tTs4MjxBtTGOBT84R3mp8td8uw3mrdzmTGCxumdQm_fTzJhjNWmxPaCllxy5tEkPpn4oEBFhtnFEfGnNDYcxzZKBxK3hxHEq5sz9So9aaoP5dn46jPAai3__lAGBPF52l1rzGPmQ2QRcD1cU6cGV3GDXbT79U8RtOcMq6gvyKSnxKOjP7-6Jc9tyvXE9Ni9HUQ71eFji8N541BLwal3R5OzlaNa2YRdAf_k7rar_9mmDIbyOE9xwJtm36wmN5B1rJpTkCSCPy1RHpVdAPKYdDrqZ_yr-poJHS71qc7YLna9EnB0P6IWiIV4eVhr-rep9XrPMRiTom9sRJFAJ57/p.gif?fv_content=true&size_mode=5" width="100%" height="900" style="vertical-align:middle">
+<br>
 
 </div>
 
 </body>
+<p> Author: Georgios Thelouras</p>
+
 </html>
