@@ -1,6 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Air Quality Project</title>
+<body>
+<body style="background-color:powderblue;">
+<h1>Air Quality Project<h1>
+<h2>GIS και Δεδομένα Ατμοσφαιρικής Ρύπανσης</h2>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1 {text-align: center;}
+h2 {text-align: center;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="https://gthelouras.github.io/airquality/index.html">Home</a>
+  <a href="https://gthelouras.github.io/airquality/EU_USA.html">EAQI and AQI-USEPA</a>
+  <a href="https://gthelouras.github.io/airquality/data.html">Atmospheric Pollution Data</a>
+  <a href="https://gthelouras.github.io/airquality/WMS.html">QGIS with WMS WFS</a>
+  <a href="https://gthelouras.github.io/airquality/netcdf_1.html"> QGIS with NetCDF-4 files</a>
+  <div class="dropdown">
+    <button class="dropbtn">ArcGIS Web Apps 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	  <a href="https://www.arcgis.com/apps/View/index.html?appid=29c78ac0f4594c1aba5f3c446a28c458">Web Map AQI</a>
+	  <a href="https://www.arcgis.com/apps/View/index.html?appid=a520ea55d26b4504b5a34649f5949505">Web Map PM</a>
+      <a href="https://www.arcgis.com/apps/View/index.html?appid=e3794b64d99e4bd4be5b131c6f3b372f">Web Map Ozone</a>
+	  <a href="https://www.arcgis.com/apps/View/index.html?appid=53f8b9b5e16d440ba3ca22d0fff29c8a">Web Map NO2</a>
+	  <a href="https://www.arcgis.com/apps/View/index.html?appid=62b52ef32e6448f4b8515f3b9b5a07d9">Web Map SO2</a>
+    </div>
+    </div>
+  </div>
   <title>AQI in EU and USA</title>
 <body>
 <body style="background-color:powderblue;">
@@ -18,4 +115,25 @@
 <iframe src="https://gispub.epa.gov/airnow/?tab=0&clayer=ozonepm&mlayer=none" width="90%" height="800" style="border:1px solid black;">
 </iframe>
 
-<html>
+<footer>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: powderblue;
+   color: black;
+   text-align: center;
+}
+</style>
+</footer>
+<body>
+<div class="footer">
+  <p>Contact:<a href="mailto:gthelouras@gmail.com">Author: Georgios Thelouras</a></p>
+<p>Air Quality Project 2021<p/></p>
+</div>
+
+</footer>
+</html>
